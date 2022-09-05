@@ -286,6 +286,12 @@ button {
   font-weight: 300;
   margin-bottom: 1.2rem;
 }
+@media (max-width: 387px) {
+  .why .container__description h2 {
+    text-align: center;
+    line-height: 1.4;
+  }
+}
 .why .container__description P {
   font-size: 16px;
 }
@@ -463,10 +469,10 @@ button {
     position: absolute;
     right: -12rem;
     top: 0;
-    background: url("../../images/bg-intro-desktop.svg") no-repeat;
+    background-image: url("../../images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
-    width: 150%;
+    width: 140%;
     background-size: 122%;
     background-position: 0% 83%;
     height: 100%;

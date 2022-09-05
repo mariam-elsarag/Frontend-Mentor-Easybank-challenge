@@ -16,12 +16,10 @@
                 font-weight: 300;
                 margin-bottom: 1.2rem;
 
-                @media (max-width:387px){
-                      text-align: center;
-                     line-height: 1.4;
+                @media (max-width: 387px) {
+                    text-align: center;
+                    line-height: 1.4;
                 }
-                    
-
             }
             P {
                 font-size: 16px;
