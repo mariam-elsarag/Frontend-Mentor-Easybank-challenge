@@ -1,0 +1,45 @@
+/* ========== start why section ========== */
+@use "../helper/variables" as *;
+.why {
+    background-color: $light-grayish-blue;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+
+        &__description {
+            width: 600px;
+            max-width: 100%;
+            h2 {
+                font-weight: 300;
+                margin-bottom: 1.2rem;
+
+                @media (max-width:387px){
+                      text-align: center;
+                     line-height: 1.4;
+                }
+                    
+
+            }
+            P {
+                font-size: 16px;
+            }
+        }
+        .reasons {
+            .reason {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                row-gap: 1.5rem;
+                p {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* ========== end why section ========== */

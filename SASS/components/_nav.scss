@@ -1,0 +1,55 @@
+/* ========== start anv section ==========*/
+@use "../helper/variables" as *;
+.nav {
+    background-color: $white;
+    position: relative;
+    z-index: 4;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+        &-logo {
+            width: 8.8125rem;
+            height: 1.375rem;
+        }
+        .toggle-menu {
+            font-size: 1.3rem;
+        }
+        &-links {
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            top: -500%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 2rem;
+            padding: 2rem 0;
+            width: 95%;
+            margin: auto;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            transition: $transition;
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -ms-transition: $transition;
+            -o-transition: $transition;
+            opacity: 0.5;
+            &.active {
+                top: 5.4rem;
+                opacity: 1;
+            }
+            li a {
+                color: $dark-blue;
+            }
+        }
+    }
+}
+/* ========== end anv section ==========*/

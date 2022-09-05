@@ -1,0 +1,149 @@
+/* ========== start media query ==========*/
+@use "../helper/variables" as *;
+/* large screen*/
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .landing {
+        position: relative;
+        z-index: 3;
+        .container {
+            flex-direction: row;
+        }
+        figure {
+            flex: 3;
+            order: 2;
+            height: 41rem;
+            background-image: none;
+            &::before {
+                content: "";
+                position: absolute;
+                right: -12rem;
+                top: 0;
+                background-image: url("../../images/bg-intro-desktop.svg");
+
+                background-repeat: no-repeat;
+                background-position: center bottom;
+                width: 140%;
+                background-size: 122%;
+                background-position: 0% 83%;
+                height: 100%;
+            }
+            &::after {
+                width: 120%;
+                height: 122%;
+                background-size: 94%;
+                background-position: center 150%;
+                left: 22%;
+                top: -4rem;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            top: -5rem;
+            right: -15rem;
+        }
+        &__description {
+            flex: 2;
+            top: unset;
+            align-items: unset;
+            h1 {
+                text-align: left;
+            }
+            P {
+                text-align: left;
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .why,
+    .latest {
+        z-index: -1;
+    }
+}
+@media screen and (min-width: 800px) {
+    /*nav*/
+    .nav {
+        &__container {
+            .toggle-menu {
+                display: none;
+            }
+            &-links {
+                position: static;
+                row-gap: 0;
+                flex-direction: row;
+                padding: 0;
+                align-items: center;
+                justify-content: center;
+                column-gap: 2rem;
+                width: fit-content;
+                margin: unset;
+                border-radius: unset;
+                opacity: 1;
+
+                li a {
+                    color: $grayish-blue;
+                    transition: color, width $transition;
+                    -webkit-transition: color, width $transition;
+                    -moz-transition: color, width $transition;
+                    -ms-transition: color, width $transition;
+                    -o-transition: color, width $transition;
+                    position: relative;
+                    font-size: 16px;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -30px;
+                        left: 0;
+                        width: 0;
+                        height: 4px;
+                        transition: $transition;
+                        -webkit-transition: $transition;
+                        -moz-transition: $transition;
+                        -ms-transition: $transition;
+                        -o-transition: $transition;
+                        background: linear-gradient(
+                            to right,
+                            $lime-green,
+                            $bright-cyan
+                        );
+                    }
+                    &:hover {
+                        color: $dark-blue;
+                    }
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Small screen*/
+@media screen and (max-width: 800px) {
+    .btn__nav {
+        display: none;
+    }
+}
+@media (max-width: 625px) {
+    .why {
+        .reason,
+        .article__text {
+            align-items: center !important;
+            text-align: center;
+        }
+    }
+    .latest {
+        h2 {
+            text-align: center;
+        }
+    }
+}
+/* ========== end media query ==========*/

@@ -1,0 +1,54 @@
+/* ========== start layout ==========*/
+@use "../helper/variables" as *;
+.container {
+    max-width: 1000px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    &_pt {
+        padding-top: 2.25rem;
+    }
+    &-pb {
+        padding-bottom: 2.25rem;
+    }
+    &-pr {
+        padding-right: 1.5rem;
+    }
+    &-pl {
+        padding-left: 1.5rem;
+    }
+    &-py {
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+    }
+    &-px {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+.overlay {
+    background-color: $grayish-blue;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+p {
+    color: $grayish-blue;
+    line-height: 1.5;
+}
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(214px, 1fr));
+    gap: 30px;
+}
+/* ========== end layout ==========*/

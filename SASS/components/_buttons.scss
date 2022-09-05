@@ -1,0 +1,28 @@
+/* ========== start button setting ==========*/
+@use "../helper/variables" as *;
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn {
+    background: linear-gradient(to right, $lime-green, $bright-cyan);
+    padding: 0.875rem 2.1875rem;
+    width: fit-content;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: $white;
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    &:hover {
+        background: linear-gradient(to right, #98e6bc, #2bb9ce);
+    }
+}
+/* ========== end button setting ==========*/
