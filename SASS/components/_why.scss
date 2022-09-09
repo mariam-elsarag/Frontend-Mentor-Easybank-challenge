@@ -23,6 +23,9 @@
             }
             P {
                 font-size: 16px;
+                @media (max-width: 387px) {
+                    text-align: center;
+                }
             }
         }
         .reasons {
